@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <h3> My Jobs are </h3>
+        <ul>
+            {% for job in jobs %}
+                <li>
+                    Comp - {{job.company}}
+                    Desc - {{job.description}}
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
